@@ -1,9 +1,9 @@
 # estudo-cpp-references
 
-Copia o ultimo arquivo para **ex-x.cpp**  **ex-y.cpp**.
+Copia o ultimo arquivo para **ex-x.cpp** para **ex-y.cpp**.
 Onde `y = x + 1`.
 
-``` cp ex-01.cpp ex-02.cpp ```
+`cp ex-01.cpp ex-02.cpp`
 
 ```bash
  ls -rtl *.cpp|
