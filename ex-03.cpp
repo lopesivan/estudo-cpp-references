@@ -4,7 +4,18 @@
 
 int main() {
 
-	LOG("Hello World!");
+	int a = 5;
+    int *b = &a;
+    LOG(a);
+    LOG(*b);
+
+    *b = 10;
+    LOG(a);
+    LOG(*b);
+
+    a = 42;
+    LOG(a);
+    LOG(*b);
 
 	return 0; // success return
 }
