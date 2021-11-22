@@ -14,7 +14,7 @@ extensions:
 
 int main() {
 
-	return 0; // success return
+    return 0; // success return
 }
 ```
 
@@ -29,9 +29,9 @@ int main() {
 
 int main() {
 
-	LOG("Hello World!");
+    LOG("Hello World!");
 
-	return 0; // success return
+    return 0; // success return
 }
 ```
 
@@ -40,6 +40,23 @@ int main() {
 # 2
 
 ```cpp
+int main() {
+
+    int a = 5;
+    int *b = &a;
+    LOG(a);
+    LOG(*b);
+
+    *b = 10;
+    LOG(a);
+    LOG(*b);
+
+    a = 42;
+    LOG(a);
+    LOG(*b);
+
+    return 0; // success return
+}
 ```
 
 ---
@@ -47,6 +64,23 @@ int main() {
 # 3
 
 ```cpp
+int main() {
+
+    int a = 5;
+    int& ref = a;
+    LOG(a);
+    LOG(ref);
+
+    a=10;
+    LOG(a);
+    LOG(ref);
+
+    ref=99;
+    LOG(a);
+    LOG(ref);
+
+    return 0; // success return
+}
 ```
 
 ---
@@ -54,6 +88,15 @@ int main() {
 # 4
 
 ```cpp
+void Increment(int value) {
+	value++;
+}
+
+int main() {
+
+	int a = 5;
+	Increment(a);
+    LOG(a); //->5
 ```
 
 ---
@@ -61,6 +104,15 @@ int main() {
 # 5
 
 ```cpp
+void Increment(int* value) {
+	(*value)++;
+}
+
+int main() {
+
+	int a = 5;
+	Increment(&a);
+    LOG(a); //->6
 ```
 
 ---
@@ -68,6 +120,15 @@ int main() {
 # 6
 
 ```cpp
+void Increment(int& value) {
+	value++;
+}
+
+int main() {
+
+	int a = 5;
+	Increment(a);
+    LOG(a); //->6
 ```
 
 ---
