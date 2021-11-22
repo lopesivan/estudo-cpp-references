@@ -2,9 +2,15 @@
 
 #define LOG(x) std::cout << x << std::endl
 
+void Increment(int value) {
+	value++;
+}
+
 int main() {
 
-	LOG("Hello World!");
+	int a = 5;
+	Increment(a);
+    LOG(a); //->5
 
 	return 0; // success return
 }
