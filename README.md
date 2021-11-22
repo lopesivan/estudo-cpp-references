@@ -1,4 +1,4 @@
-# estudo-cpp-lambda
+# estudo-cpp-references
 
 Deletar os executáveis
 
