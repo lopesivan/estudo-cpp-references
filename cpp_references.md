@@ -136,6 +136,20 @@ int main() {
 # 7
 
 ```cpp
+	int a = 5;
+	int b = 8;
+	int& ref = a;
+
+	ref = b;
+    LOG(a); //->6
+    LOG(b); //->6
+```
+
+---
+
+# 8
+
+```cpp
 ```
 
 ---
