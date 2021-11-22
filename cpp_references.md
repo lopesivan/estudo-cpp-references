@@ -10,32 +10,71 @@ extensions:
 # O início
 
 ```cpp
+#include <iostream>
 
-//
-// main
-//
 int main() {
 
-    return 0; // success return
+	return 0; // success return
 }
 ```
 
 ---
 
-# Olá Mundo
+# 1
 
 ```cpp
 #include <iostream>
 
-//
-// main
-//
+#define LOG(x) std::cout << x << std::endl
+
 int main() {
 
-    std::cout << "Hello, World!" << std::endl;
+	LOG("Hello World!");
 
-    return 0; // success return
+	return 0; // success return
 }
+```
+
+---
+
+# 2
+
+```cpp
+```
+
+---
+
+# 3
+
+```cpp
+```
+
+---
+
+# 4
+
+```cpp
+```
+
+---
+
+# 5
+
+```cpp
+```
+
+---
+
+# 6
+
+```cpp
+```
+
+---
+
+# 7
+
+```cpp
 ```
 
 ---
