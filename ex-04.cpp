@@ -4,7 +4,18 @@
 
 int main() {
 
-	LOG("Hello World!");
+	int a = 5;
+    int& ref = a;
+    LOG(a);
+    LOG(ref);
+
+    a=10;
+    LOG(a);
+    LOG(ref);
+
+    ref=99;
+    LOG(a);
+    LOG(ref);
 
 	return 0; // success return
 }
