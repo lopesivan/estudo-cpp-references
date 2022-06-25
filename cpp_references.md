@@ -2,9 +2,6 @@
 title: References C++
 author: Ivan Lopes (lopesivan.ufrj@gmail.com)
 date:   2021-11-22
-extensions:
-  - image_ueberzug
-  - render
 ---
 
 # O início
@@ -89,13 +86,13 @@ int main() {
 
 ```cpp
 void Increment(int value) {
-	value++;
+    value++;
 }
 
 int main() {
 
-	int a = 5;
-	Increment(a);
+    int a = 5;
+    Increment(a);
     LOG(a); //->5
 ```
 
@@ -105,13 +102,13 @@ int main() {
 
 ```cpp
 void Increment(int* value) {
-	(*value)++;
+    (*value)++;
 }
 
 int main() {
 
-	int a = 5;
-	Increment(&a);
+    int a = 5;
+    Increment(&a);
     LOG(a); //->6
 ```
 
@@ -121,13 +118,13 @@ int main() {
 
 ```cpp
 void Increment(int& value) {
-	value++;
+    value++;
 }
 
 int main() {
 
-	int a = 5;
-	Increment(a);
+    int a = 5;
+    Increment(a);
     LOG(a); //->6
 ```
 
@@ -136,13 +133,13 @@ int main() {
 # 7
 
 ```cpp
-	int a = 5;
-	int b = 8;
-	int& ref = a;
+    int a = 5;
+    int b = 8;
+    int& ref = a;
 
-	ref = b;
-    LOG(a); //->6
-    LOG(b); //->6
+    ref = b;
+    LOG(a); //->8
+    LOG(b); //->8
 ```
 
 ---
